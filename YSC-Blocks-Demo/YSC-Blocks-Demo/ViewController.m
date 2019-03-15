@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self useBlockInterceptLocalVariables];
+    [self useBlockQualifierChangeLocalVariables];
 }
 
 // Blocks 变量作为本地变量
@@ -75,6 +75,21 @@
     
     myLocalBlock();
 
+    a = 20;
+    b = 30;
+    
+    myLocalBlock();
+}
+    
+// 使用 __block 说明符修饰，更改局部变量值
+- (void)useBlockQualifierChangeLocalVariables {
+    __block int a = 10, b = 20;
+    void (^myLocalBlock)(void) = ^{
+        NSLog(@"%d", a*b);
+    };
+    
+    myLocalBlock();
+    
     a = 20;
     b = 30;
     
