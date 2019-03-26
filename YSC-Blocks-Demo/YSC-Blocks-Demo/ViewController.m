@@ -70,7 +70,7 @@
 - (void)useBlockInterceptLocalVariables {
     int a = 10, b = 20;
     void (^myLocalBlock)(void) = ^{
-        NSLog(@"%d", a*b);
+        printf("a = %d, b = %d\n",a, b);
     };
     
     myLocalBlock();
@@ -85,13 +85,11 @@
 - (void)useBlockQualifierChangeLocalVariables {
     __block int a = 10, b = 20;
     void (^myLocalBlock)(void) = ^{
-        NSLog(@"%d", a*b);
+        a = 20;
+        b = 30;
+        
+        printf("a = %d, b = %d\n",a, b);
     };
-    
-    myLocalBlock();
-    
-    a = 20;
-    b = 30;
     
     myLocalBlock();
 }
