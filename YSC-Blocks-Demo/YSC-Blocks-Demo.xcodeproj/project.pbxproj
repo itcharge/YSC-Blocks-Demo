@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9527EB862240ED940063A433 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9527EB852240ED940063A433 /* libstdc++.6.0.9.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
-		9527ECBE224A0B1A0063A433 /* myLocalBlockChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 9527ECBD224A0B1A0063A433 /* myLocalBlockChange.m */; };
-		9527ECC0224A2A2F0063A433 /* globalBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9527ECBF224A2A2F0063A433 /* globalBlock.m */; };
+		9527ECC3224B4F860063A433 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9527ECC2224B4F860063A433 /* Person.m */; };
 		95F5F483222E69F700539D7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F5F482222E69F700539D7F /* AppDelegate.m */; };
 		95F5F486222E69F700539D7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F5F485222E69F700539D7F /* ViewController.m */; };
 		95F5F489222E69F700539D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F5F487222E69F700539D7F /* Main.storyboard */; };
@@ -20,8 +19,8 @@
 
 /* Begin PBXFileReference section */
 		9527EB852240ED940063A433 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
-		9527ECBD224A0B1A0063A433 /* myLocalBlockChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myLocalBlockChange.m; sourceTree = "<group>"; };
-		9527ECBF224A2A2F0063A433 /* globalBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = globalBlock.m; sourceTree = "<group>"; };
+		9527ECC1224B4F860063A433 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		9527ECC2224B4F860063A433 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		95F5F47E222E69F700539D7F /* YSC-Blocks-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YSC-Blocks-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F5F481222E69F700539D7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95F5F482222E69F700539D7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,8 +77,8 @@
 				95F5F482222E69F700539D7F /* AppDelegate.m */,
 				95F5F484222E69F700539D7F /* ViewController.h */,
 				95F5F485222E69F700539D7F /* ViewController.m */,
-				9527ECBD224A0B1A0063A433 /* myLocalBlockChange.m */,
-				9527ECBF224A2A2F0063A433 /* globalBlock.m */,
+				9527ECC1224B4F860063A433 /* Person.h */,
+				9527ECC2224B4F860063A433 /* Person.m */,
 				95F5F487222E69F700539D7F /* Main.storyboard */,
 				95F5F48A222E69F800539D7F /* Assets.xcassets */,
 				95F5F48C222E69F800539D7F /* LaunchScreen.storyboard */,
@@ -159,9 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9527ECC0224A2A2F0063A433 /* globalBlock.m in Sources */,
+				9527ECC3224B4F860063A433 /* Person.m in Sources */,
 				95F5F486222E69F700539D7F /* ViewController.m in Sources */,
-				9527ECBE224A0B1A0063A433 /* myLocalBlockChange.m in Sources */,
 				95F5F491222E69F800539D7F /* main.m in Sources */,
 				95F5F483222E69F700539D7F /* AppDelegate.m in Sources */,
 			);
